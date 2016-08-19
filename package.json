@@ -1,5 +1,5 @@
 {
-  "name": "hoverintent",
+  "name": "superhuman-hoverintent",
   "version": "1.0.2",
   "repository": "git@github.com:tristen/hoverintent.git",
   "description": "Fire mouse events when the user intends it",
@@ -7,7 +7,7 @@
   "scripts": {
     "build": "browserify index.js -s hoverintent | uglifyjs -mc > dist/hoverintent.min.js"
   },
-  "author": "tristen",
+  "author": "kakadiya91",
   "ender": "./ender.js",
   "homepage": "http://tristen.ca/hoverintent",
   "licenses": [
