@@ -35,7 +35,7 @@ var hoverintent = function(el, onOver, onOut) {
       pX = x;
       pY = y;
       timer = setTimeout(function() {
-        compare(el, overEvent, e);
+        compare(el, e);
       }, options.interval);
     }
   }
