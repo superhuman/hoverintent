@@ -79,8 +79,14 @@ var hoverintent = function(el, onOver, onOut) {
 
   h.remove = function() {
     if (!el) return;
+    if (timer) {
+      timer = clearTimeout(timer);
+    }
     el.removeEventListener('mouseover', dispatchOver, false);
     el.removeEventListener('mouseout', dispatchOut, false);
+    el.removeEventListener('mousemove', tracker, false);
+    // Clear references to prevent memory leaks
+    el = onOver = onOut = null;
   };
 
   if (el) {
